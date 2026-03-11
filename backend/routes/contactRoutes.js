@@ -22,6 +22,7 @@ router.post('/', async (req, res) => {
   }
 });
 //get
+//Get all details
 router.get('/all', async (req, res) => {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(' ')[1];
