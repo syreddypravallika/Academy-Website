@@ -1,0 +1,102 @@
+/* Container */
+.pay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f2f4f8;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.pay-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.pay-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Title */
+.pay-card h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Course Summary */
+.course-summary {
+  text-align: left;
+  background: #f0f6ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Status message */
+.status {
+  color: green;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.input-box {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.input-box:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+.amount-box {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+
+/* Buttons */
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pay-btn:hover {
+  background: #357ab8;
+}
+
+/* Success Card */
+.success-card {
+  border-left: 6px solid #28a745;
+}
+
+.start-btn {
+  margin-top: 15px;
+  background: #28a745;
+}
+
+.start-btn:hover {
+  background: #218838;
+}

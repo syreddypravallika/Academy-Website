@@ -1,198 +1,170 @@
+/* RESET SPACES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .about-page {
   width: 100%;
-  padding: 40px 20px;
-  background: #f7f9fc;
-  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* =======================
-   TOP SECTION
-======================= */
-.about-top {
-  max-width: 1100px;
-  margin: auto;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  background: white;
-  padding: 35px;
-  border-radius: 16px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+/* SECTION STRUCTURE */
+.full-width-section {
+  width: 100%;
 }
 
-.about-top-left {
-  flex: 1;
-}
+.empower-bg { background-color: #ffffff; }
+.cert-bg { background-color: #f8fafc; }
 
-.about-title {
-  font-size: 32px;
-  font-weight: bold;
-  color: #0f172a;
-  margin-bottom: 15px;
-}
-
-.about-text {
-  font-size: 16px;
-  color: #334155;
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-
-.about-points {
-  margin-top: 18px;
+.split-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.about-point {
-  font-size: 15px;
-  color: #1e293b;
-  background: #f1f5f9;
-  padding: 10px 12px;
-  border-radius: 10px;
-  font-weight: 600;
-}
-
-/* Right Image */
-.about-top-right {
-  flex: 1;
-}
-
-.about-top-right img {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  min-height: 550px; /* INCREASED: Not too short, not too long */
 }
 
-/* =======================
-   IMAGE STRIP
-======================= */
-.about-image-strip {
-  max-width: 1100px;
-  margin: 30px auto;
-}
-
-.about-image-strip img {
+/* IMAGE SIDE - BALANCED HEIGHT */
+.image-side {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
-}
-
-/* =======================
-   SERVICES SECTION
-======================= */
-.about-services {
-  max-width: 1100px;
-  margin: auto;
-  margin-top: 30px;
-}
-
-.about-section-title {
-  font-size: 26px;
-  font-weight: bold;
-  color: #0f172a;
-  margin-bottom: 18px;
-}
-
-/* Horizontal Scroll */
-.about-scroll {
-  display: flex;
-  gap: 18px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-.about-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.about-scroll::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 10px;
-}
-
-/* Cards */
-.about-card {
-  min-width: 260px;
-  max-width: 260px;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+  height: 550px; /* Matches the grid height */
   overflow: hidden;
-  flex-shrink: 0;
 }
 
-.about-card img {
+.image-side img {
   width: 100%;
-  height: 160px;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.about-card h3 {
-  font-size: 18px;
-  font-weight: bold;
+/* TEXT SIDE */
+.text-side {
+  padding: 60px 8%;
+}
+
+.main-heading {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
   color: #0f172a;
-  margin: 14px 14px 6px;
+  line-height: 1.2;
 }
 
-.about-card p {
-  font-size: 14px;
+.tagline {
+  color: #3b82f6;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.text-side p {
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #475569;
-  line-height: 1.6;
-  margin: 0px 14px 16px;
+  margin-bottom: 20px;
 }
 
-/* =======================
-   BOTTOM SECTION (VERTICAL)
-======================= */
-.about-bottom {
-  max-width: 1100px;
-  margin: 35px auto 0px;
+.feature-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  margin-top: 25px;
 }
 
-.about-bottom-card {
-  background: white;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+.feature {
+  font-weight: 700;
+  color: #1e293b;
+  font-size: 1.1rem;
 }
 
-.about-bottom-card h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #0f172a;
-  margin-bottom: 12px;
+/* WHAT WE OFFER SECTION - DARK THEME */
+.offer-section {
+  background-color: #0f172a;
+  color: white;
+  padding: 100px 5%;
+  width: 100%;
 }
 
-.about-bottom-card p {
-  font-size: 15px;
-  color: #334155;
+.offer-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.offer-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #94a3b8;
+  font-size: 1.2rem;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.offer-card {
+  background: #1e293b;
+  padding: 50px 30px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #334155;
+}
+
+/* CIRCLE PICTURES - ZERO GAP */
+.card-image-circle {
+  width: 180px;      /* Slightly larger for better detail */
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: 5px solid #3b82f6;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card-image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills circle completely */
+  display: block;
+}
+
+.offer-card h3 {
+  margin-bottom: 20px;
+  color: #3b82f6;
+  font-size: 1.6rem;
+}
+
+.offer-card p {
+  color: #cbd5e1;
   line-height: 1.7;
-  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
-/* =======================
-   RESPONSIVE
-======================= */
-@media (max-width: 900px) {
-  .about-top {
-    flex-direction: column;
-    padding: 25px;
-  }
+/* CERT IMAGE SPECIFIC */
+.cert-image-tweak {
+  background: #e2e8f0;
+  padding: 40px;
+  object-fit: contain !important;
+}
 
-  .about-points {
-    grid-template-columns: 1fr;
-  }
+/* REVERSE FOR ZIG-ZAG EFFECT */
+.split-grid.reverse { direction: rtl; }
+.split-grid.reverse .text-side { direction: ltr; }
 
-  .about-top-right img {
-    height: 260px;
-  }
+/* MOBILE RESPONSIVE */
+@media (max-width: 1100px) {
+  .split-grid, .split-grid.reverse { grid-template-columns: 1fr; direction: ltr; }
+  .image-side { height: 400px; }
+  .text-side { text-align: center; padding: 40px 20px; }
 }
