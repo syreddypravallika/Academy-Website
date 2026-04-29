@@ -1,0 +1,45 @@
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* remove scrollbars */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Remove unwanted scrollbars */
+body {
+  overflow-x: hidden; /* removes horizontal scrollbar */
+  overflow-y: auto;   /* vertical scrollbar appears only if needed */
+}
