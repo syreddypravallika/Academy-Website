@@ -8,7 +8,7 @@ function Footer() {
         {/* Help Section */}
         <div className="footer-column">
           <h3>Help</h3>
-          <p>Email: support@edu-education.com</p>
+          <p>Email:support@edu-education.com</p>
         </div>
 
         {/* Contact Section */}
